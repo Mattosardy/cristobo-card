@@ -3,32 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Dra. Maria José Cristobo — Contacto profesional</title>
   <meta name="description" content="Vicepresidenta de la Asociación Uruguaya de Ortodoncia. Tarjeta profesional digital.">
 
-  <!-- Etiquetas OG (para previsualización en redes) -->
+  <!-- Open Graph para WhatsApp/LinkedIn -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tarjeta digital">
   <meta property="og:title" content="Dra. Maria José Cristobo">
   <meta property="og:description" content="Vicepresidenta · Asociación Uruguaya de Ortodoncia">
-  <meta property="og:url" content="https://mattosardy.github.io/cristobo-card/">
-  <meta property="og:image" content="https://mattosardy.github.io/cristobo-card/logotipo-contacto.png">
+  <meta property="og:url" content="https://mattosardy.github.io/cristobo-card/icon-link.html?v=2">
+  <meta property="og:image" content="https://mattosardy.github.io/cristobo-card/logotipo-contacto.png?v=2">
+  <meta property="og:image:secure_url" content="https://mattosardy.github.io/cristobo-card/logotipo-contacto.png?v=2">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:type" content="image/png">
-  
-  <!-- Fallback para WhatsApp -->
+
+  <!-- Twitter cards (algunos clientes las usan de fallback) -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Dra. Maria José Cristobo">
   <meta name="twitter:description" content="Vicepresidenta · Asociación Uruguaya de Ortodoncia">
-  <meta name="twitter:image" content="https://mattosardy.github.io/cristobo-card/logotipo-contacto.png">
+  <meta name="twitter:image" content="https://mattosardy.github.io/cristobo-card/logotipo-contacto.png?v=2">
 
-  <!-- Redirección automática -->
-  <meta http-equiv="refresh" content="1; url=https://mattosardy.github.io/cristobo-card/">
+  <!-- IMPORTANTE: pequeño delay para que el crawler lea los OG antes de redirigir -->
+  <meta http-equiv="refresh" content="2; url=https://mattosardy.github.io/cristobo-card/">
   <script>
-    setTimeout(()=>{window.location.href="https://mattosardy.github.io/cristobo-card/";},600);
+    setTimeout(()=>{ location.href="https://mattosardy.github.io/cristobo-card/"; }, 1500);
   </script>
 </head>
-<body style="background:#fff;font-family:sans-serif;text-align:center;color:#0A3D91;">
-  <p>Redirigiendo a la tarjeta profesional...</p>
+<body style="background:#fff;font-family:system-ui,Arial,sans-serif;color:#0A3D91;text-align:center;padding:24px">
+  <p>Redirigiendo a la tarjeta profesional…</p>
 </body>
 </html>
