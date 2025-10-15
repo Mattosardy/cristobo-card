@@ -58,9 +58,7 @@
       box-shadow: 0 10px 40px rgba(10,61,145,0.10), 0 0 0 8px rgba(13,110,253,0.02) inset;
       backdrop-filter: blur(3px);
     }
-    .brand{
-      display:flex; align-items:center; gap:14px; margin-bottom:6px;
-    }
+    .brand{display:flex; align-items:center; gap:14px; margin-bottom:6px;}
     .logo{
       width:54px; height:54px; border-radius:14px;
       background: radial-gradient(80% 80% at 30% 30%, var(--accent-weak), #0b2150);
@@ -70,19 +68,10 @@
       box-shadow:0 0 24px rgba(13,110,253,0.25);
     }
     .logo span{ font-size:18px; line-height:1 }
-    h1{
-      margin:0; font-size:20px; letter-spacing:0.4px; font-weight:700;
-      color:var(--accent);
-    }
-    .subtitle{
-      margin:2px 0 14px; color:var(--accent-weak); font-size:14px; letter-spacing:0.3px;
-    }
-    .about{
-      margin:0 0 18px; color:#2a4d86; font-size:14px; line-height:1.45;
-    }
-    .grid{
-      display:grid; gap:12px; grid-template-columns:1fr 1fr;
-    }
+    h1{margin:0; font-size:20px; letter-spacing:0.4px; font-weight:700; color:var(--accent);}
+    .subtitle{margin:2px 0 14px; color:var(--accent-weak); font-size:14px; letter-spacing:0.3px;}
+    .about{margin:0 0 18px; color:#2a4d86; font-size:14px; line-height:1.45;}
+    .grid{display:grid; gap:12px; grid-template-columns:1fr 1fr;}
     @media (max-width:480px){ .grid{ grid-template-columns:1fr } }
     .btn{
       display:flex; align-items:center; justify-content:center; gap:10px;
@@ -97,7 +86,6 @@
     .btn.primary{ background:#fff; color:var(--accent); }
     .btn.secondary{ background:#fff; color:var(--accent-weak); border-color:var(--accent-weak); }
     .row{ display:flex; gap:12px; flex-wrap:wrap; margin-top:12px }
-    .mono{ font-family:"Roboto Mono", monospace; font-size:12px; color:var(--muted) }
     .footer{
       margin-top:18px; display:flex; justify-content:center; align-items:center;
       border-top:1px dashed var(--border); padding-top:12px;
@@ -105,7 +93,6 @@
     .small{ font-size:12px; color:var(--muted) }
     .t3{ color:var(--accent) }
 
-    /* Crédito Telecom T3 */
     .credit{
       position:absolute;
       bottom:10px; right:20px;
@@ -119,16 +106,13 @@
       text-decoration:none;
       font-weight:600;
     }
-    .credit a:hover{
-      text-decoration:underline;
-      opacity:0.9;
-    }
+    .credit a:hover{text-decoration:underline; opacity:0.9;}
   </style>
 </head>
 <body>
-  <main class="card" role="main" aria-label="Tarjeta de contacto de la Dra. Maria José Cristobo">
-    <header class="brand" aria-label="Identidad de marca">
-      <div class="logo" aria-hidden="true"><span>MC</span></div>
+  <main class="card" role="main">
+    <header class="brand">
+      <div class="logo"><span>MC</span></div>
       <div>
         <h1>Dra. Maria José Cristobo</h1>
         <div class="subtitle">Vicepresidenta de la Asociación Uruguaya de Ortodoncia</div>
@@ -139,11 +123,11 @@
       Atención profesional y representación académica. Contacto directo para coordinación, actividades científicas y vinculación institucional.
     </p>
 
-    <section class="grid" aria-label="Acciones rápidas">
+    <section class="grid">
       <a class="btn primary" href="tel:+59894620519">📞 Llamar</a>
-      <a class="btn primary" href="https://wa.me/59894620519" target="_blank" rel="noopener">💬 WhatsApp</a>
+      <a class="btn primary" href="https://wa.me/59894620519" target="_blank">💬 WhatsApp</a>
       <a class="btn secondary" href="mailto:cristobomj@gmail.com?subject=Consulta%20profesional">✉️ Email</a>
-      <a class="btn secondary" href="https://web.aou.org.uy/sociedades-cientificas-y-seccionales/sociedad-uruguaya-de-ortodoncia-suo/" target="_blank" rel="noopener">🌐 Sociedad Uruguaya de Ortodoncia</a>
+      <a class="btn secondary" href="https://web.aou.org.uy/sociedades-cientificas-y-seccionales/sociedad-uruguaya-de-ortodoncia-suo/" target="_blank">🌐 Sociedad Uruguaya de Ortodoncia</a>
       <a class="btn primary" id="vcfBtn" href="#">💾 Guardar contacto (.vcf)</a>
     </section>
 
@@ -157,54 +141,51 @@
     </div>
 
     <div class="credit">
-      Desarrollado por <a href="https://wa.me/59898313825?text=Hola%20TelecomT3,%20quiero%20una%20tarjeta%20digital%20como%20la%20de%20la%20Dra.%20Cristobo"
-      target="_blank" rel="noopener">Telecom T3</a>
+      Desarrollado por <a href="https://wa.me/59898313825?text=Hola%20TelecomT3,%20quiero%20una%20tarjeta%20digital%20como%20la%20de%20la%20Dra.%20Cristobo" target="_blank">Telecom T3</a>
     </div>
-
-    <a id="vcfData" class="hidden"
-       download="Contacto-Dra-Cristobo.vcf"
-       href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3A%3BCristobo%3BMaria%20Jos%C3%A9%3B%3B%0AFN%3ADra.%20Maria%20Jos%C3%A9%20Cristobo%0ATITLE%3AVicepresidenta%20de%20la%20Asociaci%C3%B3n%20Uruguaya%20de%20Ortodoncia%0ATEL%3BTYPE%3ACELL%2CVOICE%3A%2B59894620519%0AEMAIL%3BTYPE%3AINTERNET%3Acristobomj%40gmail.com%0AURL%3Ahttps%3A%2F%2Fweb.aou.org.uy%2Fsociedades-cientificas-y-seccionales%2Fsociedad-uruguaya-de-ortodoncia-suo%2F%0AEND%3AVCARD">
-    </a>
   </main>
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
-    const PUBLIC_VCF_URL = "";
+
+    // Genera un timestamp único para romper caché del .vcf
+    const cacheBreaker = new Date().getTime();
+    const PUBLIC_VCF_URL = `https://mattosardy.github.io/cristobo-card/Contacto-Dra-Cristobo.vcf?v=${cacheBreaker}`;
+
+    // Botón para descargar contacto
     const vcfBtn = document.getElementById('vcfBtn');
-    const vcfData = document.getElementById('vcfData');
-    vcfBtn.addEventListener('click', (e) => {
+    vcfBtn.addEventListener('click', e=>{
       e.preventDefault();
-      const href = PUBLIC_VCF_URL || vcfData.getAttribute('href');
-      const a = document.createElement('a');
-      a.href = href;
-      a.download = "Contacto-Dra-Cristobo.vcf";
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
+      const a=document.createElement('a');
+      a.href=PUBLIC_VCF_URL;
+      a.download="Contacto-Dra-Cristobo.vcf";
+      document.body.appendChild(a);a.click();a.remove();
     });
-    const shareBtn = document.getElementById('shareBtn');
-    shareBtn.addEventListener('click', async () => {
-      const shareData = { title: 'Dra. Maria José Cristobo', text: 'Tarjeta de contacto profesional', url: window.location.href };
+
+    // Compartir tarjeta
+    const shareBtn=document.getElementById('shareBtn');
+    shareBtn.addEventListener('click',async()=>{
+      const shareData={title:'Dra. Maria José Cristobo',text:'Tarjeta de contacto profesional',url:window.location.href};
       try{
-        if(navigator.share){ await navigator.share(shareData); }
-        else{ await navigator.clipboard.writeText(window.location.href);
-          shareBtn.textContent = "✅ Enlace copiado";
-          setTimeout(()=>shareBtn.textContent="🔗 Compartir esta tarjeta", 1600);}
+        if(navigator.share){await navigator.share(shareData);}
+        else{await navigator.clipboard.writeText(window.location.href);
+          shareBtn.textContent="✅ Enlace copiado";
+          setTimeout(()=>shareBtn.textContent="🔗 Compartir esta tarjeta",1600);}
       }catch(err){
         await navigator.clipboard.writeText(window.location.href);
-        shareBtn.textContent = "✅ Enlace copiado";
-        setTimeout(()=>shareBtn.textContent="🔗 Compartir esta tarjeta", 1600);
+        shareBtn.textContent="✅ Enlace copiado";
+        setTimeout(()=>shareBtn.textContent="🔗 Compartir esta tarjeta",1600);
       }
     });
-    const copyBtn = document.getElementById('copyBtn');
-    copyBtn.addEventListener('click', async () => {
+
+    // Copiar enlace
+    const copyBtn=document.getElementById('copyBtn');
+    copyBtn.addEventListener('click',async()=>{
       try{
         await navigator.clipboard.writeText(window.location.href);
-        copyBtn.textContent = "✅ Copiado";
-        setTimeout(()=>copyBtn.textContent="📋 Copiar enlace", 1600);
-      }catch(err){
-        alert("No se pudo copiar. Copiá manualmente: " + window.location.href);
-      }
+        copyBtn.textContent="✅ Copiado";
+        setTimeout(()=>copyBtn.textContent="📋 Copiar enlace",1600);
+      }catch(err){alert("No se pudo copiar. Copiá manualmente: "+window.location.href);}
     });
   </script>
 </body>
